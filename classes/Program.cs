@@ -12,6 +12,12 @@ namespace classes
         string _firstName;
         string _lastName;
 
+        public Customer() : this("Software", "Engineering")
+        {
+            Console.WriteLine("Achi");
+            Console.ReadLine();
+        }
+
         public Customer(string FirstName, string LastName)
         {
            this._firstName = FirstName;
@@ -36,6 +42,10 @@ namespace classes
         {
             Customer c1 = new Customer("Darshana","Senevirathna");
             c1.FullName();
+
+            Customer c2 = new Customer();
+            c2.FullName();
+
         }
     }
 }
